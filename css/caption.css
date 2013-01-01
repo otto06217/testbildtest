@@ -1,0 +1,62 @@
+/**
+ * $Id: caption.css 10 2011-06-18 23:26:51Z otto $
+ */
+/* Style the figures */
+figure {
+	position: relative;
+	display: block;
+	border: 1px solid #333;
+	margin: 5px 0 10px 0;
+}
+
+/* Style the figure captions, hiding them by default */
+figcaption {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	font-size: .7em;
+	color: #fff;
+	background-color: rgba(0, 0, 0, .7);
+	opacity: 0;
+/*	filter: alpha(opacity =     0);
+	-webkit-transition: opacity .5s ease-in-out;
+	-moz-transition: opacity .5s ease-in-out;
+	-o-transition: opacity .5s ease-in-out;
+	transition: opacity .5s ease-in-out;
+*/
+}
+
+/* Display the captions on hover */
+figure:hover figcaption {
+	opacity: 1;
+/*	filter: progid:DXImageTransform.Microsoft.gradient(
+				startColorstr = #aa000000,
+				endColorstr = #aa000000 
+			);
+*/
+}
+
+/* Add padding and margin to the caption contents */
+figcaption * {
+	padding: 0;
+	margin: 0;
+}
+
+figcaption *:first-child {
+	padding-top: 5px;
+}
+
+figcaption *:last-child {
+	padding-bottom: 5px;
+}
+
+/* Give captions and headings their own font */
+figcaption {
+	font-family: 'LinuxLibertineDisplaySmallCaps', sans-serif;
+}
+h3.caption {
+	margin: 6px 0 3px 5px;
+	text-align: center;
+	border-bottom: 0px solid #000;
+}
