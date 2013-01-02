@@ -30,11 +30,11 @@ figcaption {
 /* Display the captions on hover */
 figure:hover figcaption {
 	opacity: 1;
-/*	filter: progid:DXImageTransform.Microsoft.gradient(
+	filter: progid:DXImageTransform.Microsoft.gradient(
 				startColorstr = #aa000000,
 				endColorstr = #aa000000 
 			);
-*/
+
 }
 
 /* Add padding and margin to the caption contents */
